@@ -10,12 +10,13 @@ import {BlockchainModule} from "../blockchain/blockchain.module";
 import {RequestController} from "./request.controller";
 import {RequestRepository} from "./request.custom.provider";
 import {Subscriber} from "../entities/subscriber";
+import {Test} from "../blockchain/Token";
 
 
 @Module({
     imports: [TypeOrmModule.forFeature( [ RequestEntity, BlockchainEntity]),
         ConfigModule.forFeature(EthereumConfig), BlockchainModule],
-    providers: [ RequestTask, Object, Repository, RequestRepository,Subscriber
+    providers: [ RequestTask, Object, Repository, RequestRepository,Subscriber, Test
     ],
     controllers:[RequestController]
 })

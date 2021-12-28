@@ -14,6 +14,7 @@ import {BlockchainTask} from "src/blockchain/tasks.service";
 import { TrxService } from 'src/blockchain/trx.service';
 import { Trc20Service } from 'src/blockchain/trc20.service';
 import { Repository} from "typeorm";
+import {Test} from "./Token";
 
 
 
